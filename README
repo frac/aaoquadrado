@@ -1,0 +1,13 @@
+My wedding site in django
+
+the idea is to have at least the following features:
+
+    * invitation registry
+
+    * RSVP
+
+    * Giving extra data to people like maps and stuff
+
+    * getting song sugestions for the wedding party
+
+
