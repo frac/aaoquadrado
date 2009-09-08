@@ -3,8 +3,15 @@ import os
 import sys
 
 PROJECT_PATH = os.path.abspath(os.path.split(__file__)[0])
+if os.path.isfile("development_mode"):
+    print 'Usando configuracao LOCAL'
+    DEBUG = True
+else:    
+    DEBUG = False
+    print 'Usando configuracao PADRAO'
 
-DEBUG = True
+
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -13,12 +20,21 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = ''             # Or path to database file if using sqlite3.
-DATABASE_USER = ''             # Not used with sqlite3.
-DATABASE_PASSWORD = ''         # Not used with sqlite3.
-DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
-DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+if DEBUG:
+    DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+    DATABASE_NAME = ''             # Or path to database file if using sqlite3.
+    DATABASE_USER = ''             # Not used with sqlite3.
+    DATABASE_PASSWORD = ''         # Not used with sqlite3.
+    DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
+    DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+else:
+    DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+    DATABASE_NAME = ''             # Or path to database file if using sqlite3.
+    DATABASE_USER = ''             # Not used with sqlite3.
+    DATABASE_PASSWORD = ''         # Not used with sqlite3.
+    DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
+    DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -44,7 +60,10 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH,'static')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = 'http://aaoquadrado.com/static/'
+if DEBUG:
+    MEDIA_URL = '/static/'
+else:
+    MEDIA_URL = 'http://aaoquadrado.com/static/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
