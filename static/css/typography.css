@@ -3,6 +3,15 @@ body { font:75%/1.5em "lucida grande","lucida sans unicode", sans-serif;}
 
 p { padding:0 0  1em 0;color:#111;}
 
+#title{
+    font-size:9em;
+    position:relative;
+    top:150px;
+    left:15px;
+    margin-bottom:-80px;
+    font-weight:bold;
+}
+
 
 p.first:first-letter{ float:left;font-family: Palatino,'Palatino Linotype',Georgia, sans-serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0; }
 p img       { float: left; margin: 0.3em 0.833em 0.833em 0; padding: 0; }
