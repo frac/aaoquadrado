@@ -1,1 +1,19 @@
 {% extends "base.html"%}
+{% block menu %}
+{% endblock %}
+{% block content %}
+<div class="g480">
+    <p><a href="/detalhes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_1.png"></a></p>
+    <p><a href="/fotos"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_1.png"></a></p>
+    <p><a href="/como_chegar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_1.png"></a></p>
+    <p><a href="/onde_ficar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_1.png"></a></p>
+</div>
+
+<div class="g480">
+    <p><a href="/rsvp"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_2.png"></a></p>
+    <p><a href="/musica"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_2.png"></a></p>
+    <p><a href="/presentes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_2.png"></a></p>
+    <p><a href="/comentarios"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_2.png"></a></p>
+</div>
+
+{% endblock %}

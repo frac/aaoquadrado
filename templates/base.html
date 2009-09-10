@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/static/css/typography.css" type="text/css" media="screen, projection">
 
-<title>Aline * Adriano = AaoQuadrado</title>
+<title>Aline * Adriano</title>
 <style>
-body {background-color:#333;}
+body {background-color:#fff;}
 .main{background-color:#fff;}
 
 #nav {
@@ -44,35 +44,33 @@ width: 70px;
 </ul>
  </div-->
 <div class="clear">&nbsp;</div>
-
-<div class="g960"><img src="{{MEDIA_URL}}images/logo.png"> </div>
+<div class="g960"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_0.png"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_1.png" ><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_2.png" ></div>
 <div class="clear">&nbsp;</div>
-
-<div class="g240"><p>Pellentesque habitant morbi tristique senectus et
-netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
-sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-placerat eleifend leo.</p></div>
-
-<div class="g240"><p>Vestibulum ante ipsum primis in faucibus orci
-luctus et ultrices posuere cubilia Curae; Morbi suscipit neque quis
-eros interdum blandit. Duis mauris ligula, adipiscing sit amet,
-pellentesque id, pretium et, sem. Nam viverra semper lectus. Maecenas
-imperdiet, pede nec gravida vestibulum. </p></div>
-
-<div class="g240"><p>Ut congue lacinia tortor. Curabitur lacinia
-sodales enim. Nam tincidunt magna ac sapien. Nunc mattis, leo ut cursus
-commodo, dolor sem gravida ante, quis congue purus sem eget urna. Morbi
-consequat viverra ante. Aliquam a enim. Pellentesque at felis. Nam vel
-neque non elit aliquam fermentum. </p></div>
-
-<div class="g240"><p>Pellentesque habitant morbi tristique senectus et
-netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero
-sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-placerat eleifend leo.</p></div>
+{% block menu %}
+<div class="g240">
+    <a href="/detalhes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_1_mini.png"></a><br>
+    <a href="/fotos"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_1_mini.png"></a><br>
+</div>
+<div class="g240">
+    <a href="/como_chegar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_1_mini.png"></a><br>
+    <a href="/onde_ficar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_1_mini.png"></a><br>
+</div>
+<div class="g240">
+    <a href="/rsvp"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_2_mini.png"></a><br>
+    <a href="/musica"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_2_mini.png"></a><br>
+</div>
+<div class="g240">
+    <a href="/presentes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_2_mini.png"></a><br>
+    <a href="/comentarios"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_2_mini.png"></a><br>
+</div>
 <div class="clear">&nbsp;</div>
-<div class="g960 tc"><p class="note">The photo is copywrited and taken from <a href="http://www.boston.com/bigpicture/2008/12/2008_the_year_in_photographs_p.html">©  boston big picture</a></p> </div>
+{% endblock%}
+
+{% block content %}
+foobar
+{% endblock%}
+<div class="clear">&nbsp;</div>
+<div class="g960 tc"><p class="note">hey!</p> </div>
 <div class="clear">&nbsp;</div>
 
  </div>
