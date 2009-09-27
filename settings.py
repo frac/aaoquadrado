@@ -103,12 +103,11 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.admin',
+    'django.contrib.admindocs',
+    'django.contrib.markup',
+    'django.contrib.flatpages',
+    'south',
     'aaoquadrado.info',
 )
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-try:
-    execfile(PROJECT_PATH+'/settings_local.py')
-    #print 'Usando configuracao LOCAL'
-except IOError:
-    #print 'Usando configuracao PADRAO'
-    pass
