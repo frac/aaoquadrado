@@ -1,3 +1,4 @@
 *.pyc
 development_mode
 settings.py
+*.swp
