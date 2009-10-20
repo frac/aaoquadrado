@@ -8,46 +8,38 @@
 <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/static/css/typography.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/static/css/{{ flavor }}/extra.css" type="text/css" media="screen, projection">
+<script type="text/javascript" src="/static/nifty.js"></script>
 
 <title>Aline * Adriano</title>
 <style>
-body {background-color:#fff;}
+body {background-color:#efefef;}
 .main{background-color:#fff;}
+div#menu hr{
+    height:1px;
+    background-color:#666;
+    color:#666;
+}
 </style>
 </head><body>
 <div class="main">
     <div class="miniclear"></div>
-    <a href="/"><div id="title">Aline e Adriano</div><div class="g960"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_0.png"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_1.png" ><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_0_2.png" ></div></a>
+    <a href="/"><div class="g960"><img src="{{MEDIA_URL}}images/{{ flavor }}/logo.png"></div></a>
 <div class="miniclear"></div>
 {% block menu %}
-<div class="g120">
-    <a href="/detalhes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_1_mini.png"></a><br>
+<div class="g320" id="menu">
+    <a href="/home"><img src="{{MEDIA_URL}}images/{{ flavor }}/home.png"></a><hr>
+    <a href="/detalhes"><img src="{{MEDIA_URL}}images/{{ flavor }}/detalhes.png"></a><hr>
+    <a href="/rsvp"><img src="{{MEDIA_URL}}images/{{ flavor }}/rsvp.png"></a><hr>
+    <a href="/fotos"><img src="{{MEDIA_URL}}images/{{ flavor }}/fotos.png"></a><hr>
+    <a href="/faq"><img src="{{MEDIA_URL}}images/{{ flavor }}/faq.png"></a><hr>
+    <a href="/como_chegar"><img src="{{MEDIA_URL}}images/{{ flavor }}/como_chegar.png"></a><hr>
+    <a href="/musica"><img src="{{MEDIA_URL}}images/{{ flavor }}/musica.png"></a><hr>
+    <a href="/onde_ficar"><img src="{{MEDIA_URL}}images/{{ flavor }}/onde_ficar.png"></a>
 </div>
-<div class="g120">
-    <a href="/fotos"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_1_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/como_chegar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_1_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/onde_ficar"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_1_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/rsvp"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_2_2_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/musica"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_4_2_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/presentes"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_6_2_mini.png"></a><br>
-</div>
-<div class="g120">
-    <a href="/comentarios"><img src="{{MEDIA_URL}}images/{{ flavor }}/slice_8_2_mini.png"></a><br>
-</div>
-<div class="clear">&nbsp;</div>
 {% endblock%}
 
-<div class="g960">
+<div class="g640">
+<br/>
 {% block content %}
 foobar
 {% endblock%}
@@ -55,9 +47,6 @@ foobar
 <div class="clear">&nbsp;</div>
 <div class="g960 tc"><p class="note"></p> </div>
 <div class="clear">&nbsp;</div>
-
- </div>
-
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
