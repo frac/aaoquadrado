@@ -1,7 +1,11 @@
 
-body { font:75%/1.5em "lucida grande","lucida sans unicode", sans-serif;}
+body { 
+   /* font:75%/1.5em "lucida grande","lucida sans unicode", sans-serif;*/
+   font-family: Verdana, Geneva, sans-serif;  
+   font-size: 2em;
+}
 
-p { padding:0 0  1em 0;color:#111;}
+p { padding:0 0  1em 0;}
 
 #title{
     font-size:9em;
@@ -12,21 +16,28 @@ p { padding:0 0  1em 0;color:#111;}
     font-weight:bold;
 }
 
+body {background-color:#efefef;}
+.main{background-color:#fff;}
+div#menu hr{
+    height:1px;
+    background-color:#666;
+    color:#666;
+}
 
-p.first:first-letter{ float:left;font-family: Palatino,'Palatino Linotype',Georgia, sans-serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0; }
+
+
 p img       { float: left; margin: 0.3em 0.833em 0.833em 0; padding: 0; }
 p img.right { float: right; margin: 0.3em  0 0.833em 0.833em;  }
 
 
-h1,h2{ font-weight:normal; color: #333; font-family:Georgia, "Times New Roman", serif;  }
-h3,h4,h5,h6 { font-weight: normal; color: #333; font-family:Georgia, "Times New Roman", serif; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #333; }
 
 
-h1 { font-size: 2.2em;  margin-bottom: 0.682em; }
-h2 { font-size: 1.9em;  margin-bottom: 0.79em; }
-h3 { font-size: 1.7em;  margin-bottom: 0.882em; }
-h4 { font-size: 1.4em;  margin-bottom: 1.071em; }
-h5,h6 { font-size: 1.3em;  margin-bottom: 1.154em; }
+h1 { font-size: 2.2em;}
+h2 { font-size: 1.9em;}
+h3 { font-size: 1.7em;}
+h4 { font-size: 1.4em;}
+h5,h6 { font-size: 1.3em; }
 
 /* Color palete */
 .water { color:#5582d1; }
@@ -79,7 +90,6 @@ dfn { font-weight: bold; }
 pre, code { margin: 1.5em 0; white-space: pre; }
 pre, code, tt { font: 1em monospace; line-height: 1.5; } 
 tt { display: block; margin: 1.5em 0; }
-hr { margin-bottom:1.5em; }
 
 /*other small things */
 
@@ -88,16 +98,10 @@ hr { margin-bottom:1.5em; }
 .tl { text-align:left; }
 .b { font-weight:bold; }
 .i { font-style:italic; }
+.footer {
+    font-size:.4em;
+    background-color:#efefef;
+}
 
-.indent { text-indent:1.5em;}
-.open { font-variant: small-caps; }
-p.break { text-align:center;text-indent:0;line-height:0; }
-p.zero{padding:0; margin:0}
-p.one { padding:0 1em  1em 1em;color:#111;}
-p img.right10 { float: right; margin:0.833em;  }
-
-.oldbook { font-family:"Book Antiqua","Warnock Pro","Goudy Old Style","Palatino",Georgia,serif; }
-.note { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size:0.9em; margin:0.1em; color:#333; } 
-.mono { font-family:"Courier New", Courier, monospace; }
 
 

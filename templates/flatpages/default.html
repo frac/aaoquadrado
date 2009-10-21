@@ -1,8 +1,7 @@
 {% extends "base.html"%}
 {% load markup %}
 {% block content %}
-        <div class="clear">&nbsp;</div>
-        <p>{{ flatpage.content|textile }}<p>
+        {{ flatpage.content|textile }}
         <div class="clear">&nbsp;</div>
 
 {% endblock %}
