@@ -8,7 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Example:
     # (r'^aaoquadrado/', include('aaoquadrado.foo.urls')),
-    #    (r'^info/', include('aaoquadrado.info.urls')),
+    #    (r'^core/', include('aaoquadrado.core.urls')),
     #(r'^$', direct_to_template, {'template': "index.html"}),
     (r'^$', redirect_to, {'url': "/home"}),
 

@@ -2,7 +2,7 @@
 body { 
    /* font:75%/1.5em "lucida grande","lucida sans unicode", sans-serif;*/
    font-family: Verdana, Geneva, sans-serif;  
-   font-size: 2em;
+   font-size: 1.8em;
 }
 
 p { padding:0 0  1em 0;}
@@ -33,11 +33,11 @@ p img.right { float: right; margin: 0.3em  0 0.833em 0.833em;  }
 h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #333; }
 
 
-h1 { font-size: 2.2em;}
-h2 { font-size: 1.9em;}
-h3 { font-size: 1.7em;}
-h4 { font-size: 1.4em;}
-h5,h6 { font-size: 1.3em; }
+h1 { font-size: 2.0em;}
+h2 { font-size: 1.7em;}
+h3 { font-size: 1.5em;}
+h4 { font-size: 1.2em;}
+h5,h6 { font-size: 1.2em; }
 
 /* Color palete */
 .water { color:#5582d1; }
