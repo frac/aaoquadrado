@@ -18,7 +18,6 @@ QUOTES = (["And, for an instant, she stared directly into those soft blue eyes a
         ["Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.","Linus Torvalds"],
         ["You won't get sued for anticompetitive behavior.","Linus Torvalds"],
         ["Son, no one gives a shit about all the things your cell phone does. You didn't invent it, you just bought it. Anybody can do that.","@shitmydadsays"],
-        ["Nobody is that important. They eat, shit, and screw, just like you. Maybe not shit like you, you got those stomach problems.","@shitmydadsays"],
         ["You worry too much. Eat some bacon... What? No, I got no idea if it'll make you feel better, I just made too much bacon.","@shitmydadsays"],
         ["The baby will talk when he talks, relax. It ain't like he knows the cure for cancer and he just ain't spitting it out.","@shitmydadsays"],
         ["All of the books in the world contain no more information than is broadcast as video in a single large American city in a single year. Not all bits have equal value.","Carl Sagan"],
@@ -26,7 +25,7 @@ QUOTES = (["And, for an instant, she stared directly into those soft blue eyes a
         ["For small creatures such as we the vastness is bearable only through love.","Carl Sagan"],
         ["In order to make an apple pie from scratch, you must first create the universe.","Carl Sagan"],
         ["Somewhere, something incredible is waiting to be known.","Carl Sagan"],
-        ["Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.","Albert Eistein"],
+        ["Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.","Albert Einstein"],
         )
 """
         ["",""],
