@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+{% load coretags %}
+{% load markup %}
+{% load comments %}
+{% block content %}
+{{ flatpage.content|textile }}
+
+
+{% if flatpage.enable_comments %}
+        <div class="clear">&nbsp;</div>
+
+        <a name="comments"></a>
+        <h2>Comments</h2>
+        <hr/>
+        <p>{% get_comment_list for flatpages.FlatPage flatpage.id as comment_list %}
+
+        {% for comment in comment_list %}
+        <div class="clear comment {% cycle 'light' 'dark' %}">
+        <p>{{comment.user_email|gravatinha}}</p>
+        <p>Said <a href="{{ comment.user_url }}">{{ comment.user_name }}</a> in {{ comment.submit_date }}</p>
+        <blockquote>{{ comment.comment|linebreaks }}</blockquote>
+        </div>
+        {% endfor %}
+        <p>{% render_comment_form for flatpages.FlatPage flatpage.id %}</p>
+        </p>
+        <div class="clear">&nbsp;</div>
+
+    {% if False %}
+    {% endif %}
+        <div class="clear">&nbsp;</div>
+
+{% endif %}
+{% endblock %}

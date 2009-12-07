@@ -15,8 +15,10 @@ else:
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('adriano', 'petrich@aaoquadrado.com'),
+    ('adriano', ''),
 )
+
+DEFAULT_FROM_EMAIL = ""
 
 MANAGERS = ADMINS
 
@@ -110,6 +112,11 @@ INSTALLED_APPS = (
     'django.contrib.comments',
     'django.contrib.flatpages',
     'south',
+    'comments_spamfighter',
     'aaoquadrado.core',
 )
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+AKISMET_SECRET_API_KEY = ""
+#DEBUG=False
+
