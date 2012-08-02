@@ -4,7 +4,7 @@ import views as resource
 
 urlpatterns = patterns('',
     url(r'^login/$', resource.login),
-    url(r'^pessoa/', resource.pessoa),
+    url(r'^pessoa/^(?P<token>\d+)/$', resource.pessoa),
 
 )
 

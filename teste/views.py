@@ -21,4 +21,7 @@ def login(request):
 
     return jrender({"status":"invalid"})
 
+@csrf_exempt
+def pessoa(request, token):
+    pass
 
