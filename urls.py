@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     #(r'^$', direct_to_template, {'template': "index.html"}),
     (r'^$', redirect_to, {'url': "/home"}),
     (r'^comments/', include('django.contrib.comments.urls')),
+    (r'^teste/', include('aaoquadrado.teste.urls')),
 
     #(r'^detalhes$', direct_to_template, {'template': "detalhes.html"}),
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
