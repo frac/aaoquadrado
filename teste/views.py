@@ -21,7 +21,7 @@ def login(request):
     if request.GET:
         login = Login(request.GET)
         if login.is_valid():
-            if login.clean["username"] == "adriano" and login.clean["password"] == "1234":
+            if login.cleaned_data["username"] == "adriano" and login.cleaned_data["password"] == "1234":
                 return jrender({"status":"ok", "token":"654321"})
 
     return jrender({"status":"invalid"})
