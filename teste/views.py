@@ -18,15 +18,42 @@ class Login(forms.Form):
 
 #@csrf_exempt
 def login(request):
-    if request.GET:
-        login = Login(request.GET)
+    if request.POST:
+        login = Login(request.POST)
         if login.is_valid():
             if login.cleaned_data["username"] == "adriano" and login.cleaned_data["password"] == "1234":
                 return jrender({"status":"ok", "token":"654321"})
 
     return jrender({"status":"invalid"})
+import datetime
 
 #@csrf_exempt
 def pessoa(request, token):
-    pass
+    if token == "654321":
+        pessoa = { 'base_id': 8255,
+             'base_impresso_id': None,
+             'boleto_individual': False,
+             'cpf': u'31339663830',
+             'dt': datetime.date(2009, 3, 7),
+             'dt_falecimento': None,
+             'dt_nasc': datetime.date(1982, 11, 3),
+             'email': u'fhendo@gmail.com',
+             'escolaridade': u'superior',
+             'estado_civil': u'solteiro',
+             'familia_id': 10,
+             'grupo_profissional_id': None,
+             'id': 29,
+             'lembrete_senha': u'Oi',
+             'nacionalidade_id': 6,
+             'nome': u'F\xe1bio Hideki Endo',
+             'nome_busca': u'fabio hideki endo',
+             'profissao': u'',
+             'rg': u'33848607-0',
+             'sexo': u'm',
+             'timestamp': datetime.datetime(2011, 10, 27, 11, 51, 7, 435640),
+             'user_id': 4960}
+
+        return jrender({"status":"ok", "pessoa":pessoa})
+    
+    return jrender({"status":"invalid"})
 
