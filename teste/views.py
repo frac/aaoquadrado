@@ -11,17 +11,17 @@ class Login(forms.Form):
     password = forms.CharField()
 
 
-@csrf_exempt
+#@csrf_exempt
 def login(request):
     if request.POST:
         login = Login(request.POST)
         if login.is_valid():
             if login.clean["username"] == "adriano" and login.clean["password"] == "1234":
-                return jrender({"status":"ok", "token":"654321"}
+                return jrender({"status":"ok", "token":"654321"})
 
     return jrender({"status":"invalid"})
 
-@csrf_exempt
+#@csrf_exempt
 def pessoa(request, token):
     pass
 
