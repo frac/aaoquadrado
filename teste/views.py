@@ -1,7 +1,12 @@
 from django.http import HttpResponse, Http404
+from django.views.decorators.csrf import csrf_exempt
 from django import forms
+import json
+from django.core.serializers.json import DjangoJSONEncoder
+
+
 def jrender(context):
-    response = HttpResponse(json.dumps(context, cls=MongoJSONEncoder), 'application/json')
+    response = HttpResponse(json.dumps(context, cls=DjangoJSONEncoder), 'application/json')
     response["Access-Control-Allow-Origin"] = "*"
     return response
 
