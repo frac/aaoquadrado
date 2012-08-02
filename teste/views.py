@@ -18,8 +18,8 @@ class Login(forms.Form):
 
 #@csrf_exempt
 def login(request):
-    if request.POST:
-        login = Login(request.POST)
+    if request.GET:
+        login = Login(request.GET)
         if login.is_valid():
             if login.clean["username"] == "adriano" and login.clean["password"] == "1234":
                 return jrender({"status":"ok", "token":"654321"})
