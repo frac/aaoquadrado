@@ -21,7 +21,7 @@ def login(request):
     if request.POST:
         login = Login(request.POST)
         if login.is_valid():
-            if login.cleaned_data["username"] == "adriano" and login.cleaned_data["password"] == "1234":
+            if login.cleaned_data["username"] == "1234" and login.cleaned_data["password"] == "adriano":
                 return jrender({"status":"ok", "token":"654321"})
 
     return jrender({"status":"invalid"})
@@ -33,7 +33,6 @@ def pessoa(request, token):
         pessoa = { 'base_id': 8255,
              'base_impresso_id': None,
              'boleto_individual': False,
-             'cpf': u'31339663830',
              'dt': datetime.date(2009, 3, 7),
              'dt_falecimento': None,
              'dt_nasc': datetime.date(1982, 11, 3),
@@ -48,7 +47,6 @@ def pessoa(request, token):
              'nome': u'F\xe1bio Hideki Endo',
              'nome_busca': u'fabio hideki endo',
              'profissao': u'',
-             'rg': u'33848607-0',
              'sexo': u'm',
              'timestamp': datetime.datetime(2011, 10, 27, 11, 51, 7, 435640),
              'user_id': 4960}
